@@ -46,9 +46,7 @@ const pAequorFactory = (num, base) =>{
   }
 }
 
+const sample1 = pAequorFactory(2, mockUpStrand())
+const sample2 = pAequorFactory(4, mockUpStrand())
 
-
-
-
-
-console.log(pAequorFactory(3,mockUpStrand()))
+console.log(sample1.compareDNA(sample2))
