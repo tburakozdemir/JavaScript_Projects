@@ -29,6 +29,19 @@ const pAequorFactory = (num, base) =>{
       console.log(`New Base Generated ${replacementBase}`);
       dnaArray[randomDNAIndexSelected] = replacementBase;
       return this.dna = dnaArray;
+    },
+
+    compareDNA(sample){
+      let count = 0;
+      let percentage;
+
+      for(let i = 0; i < this.dna.length; i++){
+        if(this.dna[i] == sample.dna[i]){
+          count ++;
+        }
+      }
+      percentage = ((count / 15) * 100).toFixed(2);
+      return percentage
     }
   }
 }
