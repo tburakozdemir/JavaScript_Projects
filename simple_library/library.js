@@ -32,7 +32,10 @@ class Media{
         total += this.ratings[i]
       }
       return total / ratingsLength;
-  
+    }
+
+    addRating(newRating) {
+        this.ratings.push(newRating);
     }
   
   }
