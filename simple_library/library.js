@@ -26,7 +26,13 @@ class Media{
     }
   
     getAverageRating(){
-      
+      let total = 0;
+      let ratingsLength = this.ratings.length;
+      for(let i = 0; i < this.ratings.length;i++){
+        total += this.ratings[i]
+      }
+      return total / ratingsLength;
+  
     }
   
   }
